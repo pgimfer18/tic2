@@ -1,0 +1,68 @@
+
+
+*{
+   scroll-behavior: smooth;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.galeria > img {
+    width: 100%;
+    border: 3px solid plum;
+    transition: all 1s ease;
+}
+
+.galeria > img:hover{
+    transform: scale(1.1) rotate(3deg);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ 
+ .contacto{
+    background-color: black;
+    border: solid 5px black;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+ }
+ 
+ 
+ .contacto h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+ }
+ 
+ 
+ .linea{
+    background: white;
+    height: 5px;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ .formulario{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ 
+ .formulario > *{
+    margin: 10px 0px 0px 0px;
+    padding: 15px;
+    border-radius: 10px;
+ }
+ 
