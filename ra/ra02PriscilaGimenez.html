@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Realidad Aumentada 02</title>
+        <!-- Librería Javascript aFrame para usar funciones interactivas 3D y de realidad aumentada. La librería aframe-particle-system es para crear sistemas de partículas -->
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="aframe-particle-system-component.min.js"></script>
+    </head>
+    <body>
+  
+        <!-- 
+            Primero hay que crear una escena virtual.
+            Si pulsas la tecla Ctrl + Alt + i accederás al panel de inspección y podrás manejar el mundo virtual casi a tu antojo. Pruébalo.
+        -->
+        <a-scene>
+           <!-- 
+                a-camera: todo mundo virtual y 3D necesita de una cámara para situarse como espectador.
+                fov: es el ángulo de visión, imita la amplitud visual del ojo humano.
+            --> 
+            <a-camera fov="80" position="0 2 3"></a-camera>
+            <a-box src="./img/madera2.jpg" position="0.414 0.750 -3.551" rotation="0 45 0" scale="0.300 1.500 0.300" color="#4CC3D9" shadow></a-box>
+            <a-box src="./img/madera2.jpg" position="-0.431 0.750 -3.520" rotation="0 45 0" scale="0.300 1.500 0.300" color="#4CC3D9" shadow></a-box>
+            <a-box src="./img/madera2.jpg" position="0.463 0.750 -4.471" rotation="0 45 0" scale="0.300 1.500 0.300" color="#4CC3D9" shadow></a-box>
+            <a-box src="./img/madera2.jpg" position="-0.459 0.750 -4.412" rotation="0 45 0" scale="0.300 1.500 0.300" color="#4CC3D9" shadow></a-box>
+            <a-sphere src="./img/chicles.jpg" position="0.001 3.279 -3.999" radius="1.25" scale="0.700 0.700 0.700" color="#FFFFFF" shadow></a-sphere>
+            <a-cylinder src="./img/metal.jpg" position="0.003 2.146 -4.008" radius="0.5" scale="1.500 2.000 1.500" height="1.5" color="#FFC65D" shadow></a-cylinder>
+            <a-plane src="./img/cesped.jpg" position="0.308 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+            <a-sky color="#7DF7FC"></a-sky>
+            <a-entity position="0 5 -15" particle-system="preset:dust; velocityValue:1 1 0; particleCount:1000"></a-entity>
+            <a-sky color="black"></a-sky>
+        </a-scene>
+    </body>
+</html>
